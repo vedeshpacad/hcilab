@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.p1 {
+    background-color: whitesmoke;
+    background-image: url('https://lipsum.app/id/24/1600x900');
+    padding: 64px;
+    color: whitesmoke;
+    font-style: oblique;
+    font-size: 24px;
+    text-indent: 32px;
+    /* display: flex; */
+    text-transform: uppercase;
+    /* gap: 8px; */
+}
+
+.p2 {
+    background-image: url('https://lipsum.app/id/45/640x360');
+    padding: 128px;
+    background-repeat: repeat-x;
+    color: rgb(222, 222, 222);
+    font-size: 24px;
+    
+}
+
+.p3 {
+   font-family: "Courier New";
+    font-size: 18px;
+    /* width: 1px; */
+}
+
+.d1 {
+    font-weight: 500px;
+    display: flex;
+    width: 300px;
+    gap: 100px;
+}
+
+table {
+    border-collapse: collapse; 
+    width: 100%;
+}
