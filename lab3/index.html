@@ -4,40 +4,22 @@
         <title>
             Something
         </title>
-        <style>
-            table, th, td {
-                border: 1px solid black;
-            }
-        </style>
     </head>
     <body>
-        <h1>Lab 3</h1>
-        <ol>
-            <li>You</li>
-            <li>Are</li>
-            <li>Amazing</li>
-        </ol>
-
-        <ul>
-            <li>You</li>
-            <li>Are</li>
-            <li>Amazing</li>
-        </ul>
-        
-        <table>
-            <tr><th colspan="5">Hello</th><th rowspan="2">Bello</th></tr>
-            <tr><td>Something</td><td>Nothing</td></tr>
-            <tr colspan="4"><td>Maltikalano</td><td>Polatina</td><td>Lashishkibab</td></tr>
-        </table>
-        <p>
-        <form>
-            <label for="dname">Name</label>
-            <input type="text" id="fname" name="fname">
-            
-            <input type="radio" id="rb1">
-            <label for="rb1" name="This">This</label>
-            <input type="submit" value="Submit">
-        </form>
-        </p>
+        <p id="counter" class="main-content">Press button to start counting</p>
+        <button onclick="Increment()"><strong><h3>+</h3></strong></button>
+        <button onclick="Reset()"><strong><h3>Reset</h3></strong></button>
     </body>
+    <script>
+        var x = 0;
+        function Increment()
+        {
+            document.getElementById("counter").innerHTML = x++;
+        }
+        function Reset()
+        {
+            x = 0;
+            document.getElementById("counter").innerHTML = x;
+        }
+    </script>
 </html>
